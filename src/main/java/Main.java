@@ -15,10 +15,11 @@ public class Main {
         int userGuess = 0;
         int guessesCount = 0;
 
+
         String tooSmall = "Too low, try again.";
         String tooBig = "Too big. Try again.";
         String correctGuess = "You got it! Well done";
-        String continueResponse = "";
+        
 
         randomNumber = random.nextInt(10) + 1;
         System.out.println(randomNumber);
@@ -30,22 +31,22 @@ public class Main {
             System.out.println("Type your guess under");
             userGuess = scanner.nextInt();
 
+
             if (userGuess > randomNumber) {
                 System.out.println(tooBig);
-                guessesCount ++;
+                guessesCount++;
+
             } else if (userGuess < randomNumber) {
                 System.out.println(tooSmall);
                 guessesCount++;
+
             } else {
 
                 System.out.println(correctGuess);
                 System.out.println("You had " +guessesCount + " incorrect guesses" );
-//                System.out.println("Play again? Enter Yes ('Y') or  No ('N')");
 
             }
-//                } else if (continueResponse.equals("N")){1
-//
-//                }
+
 
             }
 
